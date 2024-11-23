@@ -1,6 +1,22 @@
+import { Helmet } from "react-helmet";
+
 const Service = () => {
   return (
     <div className="service-page">
+
+      <Helmet>
+        <title>Services Insti360 - Comprehensive Institute Management</title>
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="description"
+          content="Learn more about Insti360, a comprehensive platform for managing educational institutions, departments, and academic tasks."
+        />
+        <meta
+          name="keywords"
+          content="Insti360, institute management, educational platform, departments, batches, assignments, exams, AI-powered questions"
+        />
+      </Helmet>
+
       <header className="service-header">
         <img
           src={`/logo_black.png`}
@@ -19,7 +35,7 @@ const Service = () => {
           <div className="service-card">
             <h3>Institute Account Creation</h3>
             <p>
-              Create an institute account to kickstart the journey of organized and 
+              Create an institute account to kickstart the journey of organized and
               efficient management. Customize settings according to your institute’s unique requirements.
             </p>
           </div>
@@ -53,7 +69,7 @@ const Service = () => {
           <div className="service-card">
             <h3>Batch Organization</h3>
             <p>
-              Allocate students to specific batches under departments, making it easy 
+              Allocate students to specific batches under departments, making it easy
               to manage class schedules, assignments, and academic records.
             </p>
           </div>
@@ -89,15 +105,15 @@ const Service = () => {
         </p>
         <ul>
           <li>
-            <strong>AI-Driven Question Generation:</strong> Save time with AI-assisted 
+            <strong>AI-Driven Question Generation:</strong> Save time with AI-assisted
             question paper creation, tailored to your subjects and difficulty levels.
           </li>
           <li>
-            <strong>Flexible Submissions:</strong> Allow students to upload PDF files 
+            <strong>Flexible Submissions:</strong> Allow students to upload PDF files
             directly instead of manual entries.
           </li>
           <li>
-            <strong>Enhanced Administrative Tools:</strong> Advanced analytics and 
+            <strong>Enhanced Administrative Tools:</strong> Advanced analytics and
             insights to monitor the overall performance of departments, batches, and faculty.
           </li>
         </ul>

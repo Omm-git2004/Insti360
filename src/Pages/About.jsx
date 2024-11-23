@@ -6,6 +6,7 @@ const About = () => {
 
       <Helmet>
         <title>About Insti360 - Comprehensive Institute Management</title>
+        <meta name="robots" content="index, follow" />
         <meta
           name="description"
           content="Learn more about Insti360, a comprehensive platform for managing educational institutions, departments, and academic tasks."

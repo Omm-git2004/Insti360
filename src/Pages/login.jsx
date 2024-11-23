@@ -114,6 +114,7 @@ const Login = () => {
         <div className="login-container">
 
             <Helmet>
+                <meta name="robots" content="index, follow" />
                 <title>{loginType} Login Insti360 - Comprehensive Institute Management</title>
                 <meta
                     name="description"
