@@ -1,6 +1,22 @@
+import { Helmet } from "react-helmet";
+
 const About = () => {
   return (
     <div className="about-page">
+
+      <Helmet>
+        <title>About Insti360 - Comprehensive Institute Management</title>
+        <meta
+          name="description"
+          content="Learn more about Insti360, a comprehensive platform for managing educational institutions, departments, and academic tasks."
+        />
+        <meta
+          name="keywords"
+          content="Insti360, institute management, educational platform, departments, batches, assignments, exams, AI-powered questions"
+        />
+      </Helmet>
+
+
       <header className="about-header">
         <h1>About Insti360</h1>
         <p>
@@ -71,32 +87,32 @@ const About = () => {
       </section>
 
       <section className="about-section">
-  <h2>User Testimonials</h2>
-  <div className="testimonials-container">
-    <div className="testimonial-card">
-      <p>
-        "Insti360 has completely transformed how we manage our institute.
-        The dashboard is intuitive, and the AI-powered question generation
-        saves us so much time!"
-      </p>
-      <h4>- Dr. Ananya Sharma, Principal</h4>
-    </div>
-    <div className="testimonial-card">
-      <p>
-        "As a faculty member, I love how easy it is to assign and track
-        assignments. The student submission feature is a game-changer!"
-      </p>
-      <h4>- Mr. Rajesh Mehta, Mathematics Faculty</h4>
-    </div>
-    <div className="testimonial-card">
-      <p>
-        "Being able to access all announcements and assignments in one place
-        makes life so much easier as a student. Thank you, Insti360!"
-      </p>
-      <h4>- Priya Kapoor, Final Year Student</h4>
-    </div>
-  </div>
-</section>
+        <h2>User Testimonials</h2>
+        <div className="testimonials-container">
+          <div className="testimonial-card">
+            <p>
+              "Insti360 has completely transformed how we manage our institute.
+              The dashboard is intuitive, and the AI-powered question generation
+              saves us so much time!"
+            </p>
+            <h4>- Dr. Ananya Sharma, Principal</h4>
+          </div>
+          <div className="testimonial-card">
+            <p>
+              "As a faculty member, I love how easy it is to assign and track
+              assignments. The student submission feature is a game-changer!"
+            </p>
+            <h4>- Mr. Rajesh Mehta, Mathematics Faculty</h4>
+          </div>
+          <div className="testimonial-card">
+            <p>
+              "Being able to access all announcements and assignments in one place
+              makes life so much easier as a student. Thank you, Insti360!"
+            </p>
+            <h4>- Priya Kapoor, Final Year Student</h4>
+          </div>
+        </div>
+      </section>
 
 
       <footer className="about-footer">

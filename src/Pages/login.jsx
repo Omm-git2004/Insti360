@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios"
 import { useDispatch, useSelector } from "react-redux"
 import { addInstitute } from "../Redux_Components/Features/instituteSlice.mjs";
-import { useNavigate, useParams,Link } from "react-router-dom";
+import { useNavigate, useParams, Link } from "react-router-dom";
 import { toast } from "react-toastify"
 import { addAdmin } from "../Redux_Components/Features/adminSlice.mjs";
 import { addDepartments } from "../Redux_Components/Features/departmentSlice.mjs";
@@ -11,6 +11,7 @@ import { addBatch } from "../Redux_Components/Features/batchSlice.mjs";
 import { addFaculty } from "../Redux_Components/Features/facultySlice.mjs";
 import { useConfidentialContext } from "../Context_API/Confidential";
 import { useAuthenticateContext } from "../Context_API/Authentication";
+import { Helmet } from "react-helmet";
 
 const Login = () => {
     {/* loginType : Admin, Student, Faculty, Institute */ }
@@ -111,6 +112,19 @@ const Login = () => {
 
     return (
         <div className="login-container">
+
+            <Helmet>
+                <title>{loginType} Login Insti360 - Comprehensive Institute Management</title>
+                <meta
+                    name="description"
+                    content="Learn more about Insti360, a comprehensive platform for managing educational institutions, departments, and academic tasks."
+                />
+                <meta
+                    name="keywords"
+                    content="Insti360, institute management, educational platform, departments, batches, assignments, exams, AI-powered questions"
+                />
+            </Helmet>
+
             <div className="login-form">
                 <h2>{loginType} Login</h2>
 
