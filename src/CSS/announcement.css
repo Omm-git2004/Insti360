@@ -1,0 +1,118 @@
+.announcement-container {
+    padding-bottom: 20px;
+}
+
+.announcement-container .header {
+    height: max-content;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.announcement-list {
+    margin-bottom: 20px;
+    height: 75dvh;
+    overflow-y: auto;
+}
+
+.announcement-list::-webkit-scrollbar {
+    width: max-content;
+}
+
+.announcement-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.announcement-list::-webkit-scrollbar-thumb {
+    background-color: rgb(184, 186, 186);
+    border-radius: 2rem;
+    border: .4rem solid transparent;
+    background-clip: content-box;
+}
+
+.announcement-item {
+    background-color: #e1e1e1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.announcement-message {
+    margin-bottom: 5px;
+    font-size: 11pt;
+    line-height: 20px;
+    font-family: monospace;
+}
+
+.announcement-datetime {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.announcement-form {
+    display: flex;
+    gap: 10px;
+}
+
+.announcement-input {
+    flex-grow: 1;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.announcement-button {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12pt;
+    transition: background-color 0.3s ease;
+}
+
+
+.announcement-button:hover {
+    background-color: #0056b3;
+}
+
+.announcement-list .announcement-item button.remove-btn {
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .announcement-container {
+        padding: 10px;
+    }
+
+    .announcement-input {
+        font-size: 14px;
+    }
+
+    .announcement-button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:320px) {
+    .announcement-input {
+        height: 30px;
+        padding-top: 2%;
+        font-size: 12px;
+    }
+
+    .announcement-button {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width:430px){
+    .announcement-list{
+        height: 65vh;
+    }
+}

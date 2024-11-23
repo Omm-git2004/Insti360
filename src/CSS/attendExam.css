@@ -1,0 +1,121 @@
+/* ExamAttendingPage.css */
+
+.exam-attending-page {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+}
+
+.exam-attending-page .exam-details-card {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    gap: 10px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.exam-attending-page .exam-details-card .exam-detail-item {
+    display: flex;
+    align-items: center;
+}
+
+.exam-attending-page .exam-details-card .exam-detail-item .icon {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-right: 15px;
+}
+
+.exam-attending-page .exam-details-card .exam-detail-item .detail-title {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.exam-attending-page .exam-details-card .exam-detail-item .detail-value {
+    font-size: 16px;
+    -webkit-text-stroke: .4pt;
+    color: #333;
+}
+
+.exam-attending-page .exam-details-card .exam-timer {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.exam-attending-page .exam-details-card .exam-timer .detail-title {
+    font-size: 14pt;
+    -webkit-text-stroke: .4pt;
+    letter-spacing: .4pt;
+}
+
+.exam-attending-page .exam-details-card .exam-timer .detail-value {
+    font-size: 16pt;
+    margin-top: 10px;
+}
+
+.exam-attending-page .question .question-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #9c9b9b1c;
+}
+
+.exam-attending-page .question .question-item .question-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.exam-attending-page .question .question-item .question-header .question-index {
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.exam-attending-page .question .question-item .question-header .question-text {
+    font-size: 16px;
+}
+
+.exam-attending-page .question .question-item .options {
+    margin-top: 10px;
+}
+
+.exam-attending-page .question .question-item .options .option-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.exam-attending-page .question .question-item .options .option-item .option-input {
+    margin-right: 10px;
+}
+
+.exam-attending-page .question .question-item .options .option-item .option-text {
+    font-size: 14px;
+}
+
+.exam-attending-page .question .btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 60px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

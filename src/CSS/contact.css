@@ -1,0 +1,88 @@
+/* ContactForm.css */
+
+.contact-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-section form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-section .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-section label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+.contact-section input[type="email"],
+.contact-section input[type="text"],
+.contact-section textarea {
+    width: 95%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-section textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-section button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-section button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .contact-section.container {
+        padding: 0 10px;
+    }
+
+    .contact-sectionform {
+        padding: 15px;
+    }
+
+    .contact-sectioninput[type="email"],
+    .contact-section input[type="text"],
+    .contact-section textarea {
+        padding: 10px;
+    }
+
+    .contact-section button[type="submit"] {
+        padding: 12px 20px;
+    }
+}

@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* General styling for the container */
+.user-panel {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+/* Styling for the hamburger menu */
+.user-panel .hamburger-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #343a40;
+    color: white;
+}
+
+.user-panel .hamburger-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Hide sidebar by default*/
+.user-panel .sidebar {
+    display: none;
+    width: calc(100% - 40px);
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Show sidebar when active */
+.sidebar.active {
+    display: block;
+}
+
+/* Side bar contents design*/
+
+.user-panel .sidebar h2 {
+    color: #ffffff;
+}
+
+.user-panel .sidebar button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 4px;
+}
+
+.user-panel .sidebar button:hover {
+    background-color: #0056b3;
+}
+
+.user-panel .main-content {
+    padding: 20px;
+    background-color: #f8f9fa;
+    overflow-y: auto;
+    flex: 1;
+}
+
+@media (min-width: 930px) {
+    .user-panel {
+        flex-direction: row;
+    }
+
+    .user-panel .hamburger-menu {
+        display: none;
+    }
+
+    .user-panel .sidebar {
+        display: block;
+        width: 20%;
+    }
+
+    .user-panel .main-content {
+        width: 80%;
+    }
+}
+
+.user-panel .panel-buttton.active {
+    background-color: #0056b3;
+    transform: scale(.96);
+}

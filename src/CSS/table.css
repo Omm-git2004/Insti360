@@ -1,0 +1,36 @@
+.table-div {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border: hidden black;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 0 0 2px black;
+    overflow: hidden;
+}
+
+thead {
+    text-align: center;
+}
+
+tbody {
+    text-align: center;
+}
+
+td,
+th {
+    padding: 8px 0;
+    border: 1px solid black;
+}
+
+th{
+    background-color: aqua;
+}
+
+table button.table-btn{
+    margin: 0 3px;
+}

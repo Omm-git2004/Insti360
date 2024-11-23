@@ -1,0 +1,193 @@
+.departmentList-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Content */
+.departmentList-wrapper .content {
+    padding-top: 30px;
+    width: 100%;
+}
+
+
+/*Create Button*/
+
+.departmentList-wrapper .content .create-btn {
+    margin-left: 30px;
+    background-color: rgb(111, 38, 179);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 12pt;
+    letter-spacing: .8pt;
+    cursor: pointer;
+    transition: .4s all ease;
+}
+
+.departmentList-wrapper .content .create-btn:hover {
+    transform: scale(.96);
+}
+
+/*Department Items*/
+
+.departmentList-wrapper .content .departmentList-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+.departmentList-wrapper .content .departmentList-container button:not(.form-popup-btn, .table-btn) {
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+    letter-spacing: .8px;
+    -webkit-text-stroke: .3pt;
+    color: white;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+.departmentList-wrapper .content .departmentList-container p {
+    -webkit-text-stroke: .4pt;
+    font-size: 13pt;
+    letter-spacing: 1.1pt;
+}
+
+.departmentList-wrapper .content .departmentList-container button p {
+    margin: 3px 0;
+    font-size: 10pt;
+}
+
+.departmentList-wrapper .content .btn-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.departmentList-wrapper .content .btn-container .close-btn {
+    position: relative;
+    border-radius: 50%;
+    color: white;
+    font-size: 20pt;
+    width: 50px;
+    height: 50px;
+}
+
+/*Assignment Information*/
+.departmentList-wrapper .content .departmentList-container .assignment-container {
+    /* background-color: rgba(0, 0, 255, 0.33); */
+    width: 100%;
+
+}
+
+.departmentList-wrapper .content .departmentList-container .assignment-container .close-btn {
+    background-color: red;
+    position: relative;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    border: none;
+    -webkit-text-stroke: .6pt;
+    font-size: 12pt;
+    width: 40px;
+    height: 40px;
+}
+
+.departmentList-wrapper .content .departmentList-container .assignment-container .remove-btn {
+    width: 120px;
+    height: 40px;
+}
+
+.departmentList-wrapper .content .departmentList-container .assignment-container .assignment-info div {
+    display: flex;
+    margin: 8px 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.departmentList-wrapper .content .departmentList-container .assignment-container .assignment-info div p:first-child {
+    padding: 0 10px;
+}
+
+.departmentList-wrapper .content .departmentList-container .assignment-container .assignment-info div p:last-child {
+    font-family: monospace;
+    -webkit-text-stroke: .1pt;
+}
+
+.departmentList-wrapper .content .departmentList-container .assignment-container .assignment-info div p {
+    width: 50%;
+    font-size: 10pt;
+}
+
+.assignment-container .assignment-question {
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+}
+
+.assignment-container .assignment-question span {
+    line-height: 25px;
+}
+
+.assignment-container .assignment-question span:last-child {
+    font-family: monospace;
+    -webkit-text-stroke: .1pt;
+    letter-spacing: .3pt;
+}
+
+@media (min-width:565px) {
+    .departmentList-wrapper .content .departmentList-container .assignment-container .assignment-info div p:first-child {
+        width: 30%;
+    }
+
+    .departmentList-wrapper .content .departmentList-container .assignment-container .assignment-info div p:last-child {
+        width: 68;
+    }
+
+    .departmentList-wrapper .content .departmentList-container .assignment-container .assignment-info div p {
+        font-size: 13pt;
+    }
+}
+
+@media (max-width:600px) {
+    .assignment-container .assignment-question span {
+        font-size: 10pt;
+        line-height: 15px;
+    }
+}
+
+@media (max-width:340px) {
+    .assignment-container div.header h2 {
+        font-size: 12pt;
+    }
+
+    .departmentList-wrapper .content .departmentList-container .assignment-container .assignment-info div p {
+        font-size: 4vw;
+    }
+}
+
+.departmentList-wrapper .content .departmentList-container .assignment-container .studentInfo-container {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.departmentList-wrapper .content .departmentList-container .assignment-container .studentInfo-container p {
+    text-align: center;
+}
+
+/*Student exam*/
+
+.departmentList-wrapper .content .studentExam-container {
+    margin-top: 25px;
+}
+
+.departmentList-wrapper .content .studentExam-container p {
+    text-align: center;
+    font-size: 13pt;
+    -webkit-text-stroke: .4pt;
+    letter-spacing: 1.1pt;
+}

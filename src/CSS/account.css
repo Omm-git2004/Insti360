@@ -1,0 +1,106 @@
+/*General styling for the container*/
+
+.account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Account Contents*/
+.account-container .account-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.account-container .account-form .form-group {
+    margin-bottom: 10px;
+}
+
+.account-container .account-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.account-container .account-form .form-group input,
+.account-container .account-form .form-group select,
+.account-container .account-form .form-group textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.account-container .account-form .edit-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.account-container .account-form button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+@media (max-width:320px) {
+    .account-container .account-form .edit-buttons {
+        justify-content: center;
+    }
+
+    .account-container .account-form .edit-buttons button {
+        padding: 10px 2dvw;
+        margin: 0 2dvw;
+    }
+}
+
+.account-container .account-form div.select-container {
+    margin: 10px 0;
+}
+
+.account-container .account-form div.select-container .select-item {
+    margin: 10px 0;
+}
+
+.account-container .account-form select {
+    width: 80%;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-right: 5px;
+    outline: none;
+}
+
+.account-container .account-form select:disabled{
+    color: black;
+    -webkit-text-stroke: .4pt;
+}
+
+.account-container .account-form .back-btn {
+    margin-bottom: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.account-container .account-form .back-btn button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 100%;
+    text-align: center;
+}
+
+@media (max-width:390px){
+    .account-container .account-form select{
+        width: 70%;
+    }
+}
