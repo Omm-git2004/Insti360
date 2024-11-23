@@ -44,7 +44,7 @@ import "./CSS/about.css"
 import "./CSS/home.css"
 import "./CSS/userPage.css"
 
-axios.defaults.baseURL = "http://localhost:8000/api/v1/"
+axios.defaults.baseURL = "/api/v1/"
 
 const App = () => {
 
