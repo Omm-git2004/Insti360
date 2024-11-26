@@ -1,0 +1,109 @@
+/* Premium Page Styles */
+.premium-page {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+}
+
+.premium-header {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.premium-subtext {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.premium-status {
+    font-size: 1rem;
+    color: #ff6b6b;
+    margin-bottom: 30px;
+}
+
+/* Card Container */
+.premium-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Premium Card Styles */
+/* Adjustments for dynamic background colors */
+.premium-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333;
+}
+
+.premium-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Keep text styles consistent against different background colors */
+.card-duration {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.original-price {
+    font-size: 1rem;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.discounted-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-discount {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card-benefits {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.card-benefits li {
+    margin-bottom: 5px;
+}
+
+.upgrade-button {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.upgrade-button:hover {
+    background-color: #0056b3;
+    transform: scale(.92);
+}

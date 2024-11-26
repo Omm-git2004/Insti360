@@ -121,7 +121,7 @@ const Service = () => {
 
       <footer className="service-footer">
         <p>
-          Contact us at <a href="mailto:support@insti360.com">support@insti360.com</a>
+          Contact us at <a href="mailto:contact.insti360@gmail.com">contact@insti360.com</a>
         </p>
         <p>&copy; 2024 Insti360. All rights reserved.</p>
       </footer>

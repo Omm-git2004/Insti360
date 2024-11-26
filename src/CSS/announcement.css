@@ -10,7 +10,7 @@
 
 .announcement-list {
     margin-bottom: 20px;
-    height: 75dvh;
+    height: 70dvh;
     overflow-y: auto;
 }
 
@@ -114,5 +114,11 @@
 @media (max-width:430px){
     .announcement-list{
         height: 65vh;
+    }
+}
+
+@media (max-width:930px){
+    .announcement-list {
+        height: 60dvh;
     }
 }

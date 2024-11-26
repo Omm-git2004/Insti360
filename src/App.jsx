@@ -23,6 +23,7 @@ import Service from "./Pages/Service";
 import About from "./Pages/About";
 import { AuthenticateProvider } from "./Context_API/Authentication";
 import { useLoadingContext } from "./Context_API/LoadingContext";
+import ScrollToTop from "./Components/Others/ScrollToTop";
 
 import "./CSS/userPanel.css"
 import "./CSS/account.css"
@@ -43,7 +44,18 @@ import "./CSS/service.css"
 import "./CSS/about.css"
 import "./CSS/home.css"
 import "./CSS/userPage.css"
+import "./CSS/premium.css"
+import "./CSS/privacyPolicy.css"
+import "./CSS/termsAndConditions.css"
+import "./CSS/shippingAndDelivery.css"
+import "./CSS/cancellationRefunding.css"
+import TermsAndConditions from "./Pages/TermsAndCondition";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import CancellationRefundPolicy from "./Pages/CancellationRefundingPolicy";
+import ShippingAndDelivery from "./Pages/ShippingAndDelivery";
 
+
+// axios.defaults.baseURL = "http://localhost:8000/api/v1/"
 axios.defaults.baseURL = "/api/v1/"
 
 const App = () => {
@@ -52,6 +64,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <AuthenticateProvider>
         {
           isAuthenticating
@@ -66,6 +79,10 @@ const App = () => {
                 <Route path="about" element={<About />} />
                 <Route path="changePassword" element={<ChangePasswordPage />} />
                 <Route path="generateOtp/:userType" element={<OtpPage />} />
+                <Route path="terms&conditions" element={<TermsAndConditions />} />
+                <Route path="privacyPolicy" element={<PrivacyPolicy />} />
+                <Route path="cancellationAndRefunding" element={<CancellationRefundPolicy />} />
+                <Route path="shippingAndDelivery" element={<ShippingAndDelivery />} />
               </Route>
               <Route path="institute/:instituteId" element={<Home />} >
                 <Route index element={<UserPage />} />

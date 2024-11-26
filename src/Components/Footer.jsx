@@ -12,11 +12,11 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-section about">
                     <h2>About Us</h2>
-                    <p>Your text here about your company or website.</p>
+                    <p style={{color:"white",marginBottom:"15px"}}>Insti360 is a comprehensive institute management platform to manage departments, assignments, exams, student profiles, and more for educational institutions.</p>
                     <div className="contact">
-                        <span><i className="fa fa-map-marker"></i> Address: 123 Street, City, Country</span>
-                        <span><i className="fa fa-phone"></i> Phone: +1234567890</span>
-                        <span><i className="fa fa-envelope"></i> Email: info@example.com</span>
+                        <span><i className="fa fa-map-marker"></i> Address: Chandrasekhar Pur, Bhubaneswar, India</span>
+                        <span><i className="fa fa-phone"></i> Phone: +917609097828</span>
+                        <span><i className="fa fa-envelope"></i> Email: contact.insti360@gmail.com</span>
                     </div>
                 </div>
                 <div className="footer-section links">
@@ -26,6 +26,15 @@ const Footer = () => {
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/services">Services</Link></li>
                         <li><Link to="/contact">Contact</Link></li>
+                    </ul>
+                </div>
+                <div className="footer-section links">
+                    <h2>More</h2>
+                    <ul>
+                        <li><Link to="/terms&conditions">Terms & Conditions</Link></li>
+                        <li><Link to="/privacyPolicy">Privacy Policy</Link></li>
+                        <li><Link to="/cancellationAndRefunding">Cancellation and Refund</Link></li>
+                        <li><Link to="/shippingAndDelivery">Shipping and Delivery</Link></li>
                     </ul>
                 </div>
                 <div className="footer-section social">
