@@ -80,7 +80,8 @@ const DepartmentPage = () => {
                     <button onClick={() => showPanelContent("batchList")} disabled={isloading || isRemoving} className={`panel-buttton ${showField === "batchList" && "active"}`} >Batch List</button>
                     <button onClick={() => showPanelContent("announcement")} disabled={isloading || isRemoving} className={`panel-buttton ${showField === "announcement" && "active"}`} >Announcement</button>
                     <button onClick={() => showPanelContent("papers")} disabled={isloading || isRemoving} className={`panel-buttton ${showField === "papers" && "active"}`} >Papers</button>
-
+                    <button onClick={()=> navigate("/department/punchIn")} disabled={isloading || isRemoving} className={`panel-buttton`} >PUNCH IN</button>
+                    <button onClick={() => navigate("/department/punchOut")} disabled={isloading || isRemoving} className={`panel-buttton`} >PUNCH OUT</button>
                     {isSuperAdmin && <button onClick={() => setShowField("removeDepartment")} disabled={isloading || isRemoving} >{isRemoving ? "Deleting" : "Delete Department"}</button>}
                     <button onClick={() => navigate(-1)} disabled={isloading || isRemoving} >Go Back</button> {/* Go to the admin page */}
 

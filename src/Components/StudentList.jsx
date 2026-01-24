@@ -112,7 +112,7 @@ export default ({ studentList, deptId, batchName }) => {
 
     const requestUpdate = (student) => {
 
-        setStudentData({
+        setStudentData({ // NEEDS TO IMPLEMENT RFID TAG UPDATION
             _id: student?._id,
             firstName: student?.studentName.firstName,
             lastName: student?.studentName.lastName,
@@ -127,7 +127,8 @@ export default ({ studentList, deptId, batchName }) => {
         { type: "text", placeholder: "Enter last name", onChange: (e) => handleChanges(e), name: "lastName", label: "Last Name", defaultValue: studentData?.lastName },
         { type: "email", placeholder: "Enter Student Mail", onChange: (e) => handleChanges(e), name: "studentEmail", label: "Student Mail", defaultValue: studentData?.studentEmail },
         { type: "text", placeholder: "Enter Student Id", onChange: (e) => handleChanges(e), name: "studentId", label: "Student Id", defaultValue: studentData?.studentId },
-        { type: "date", placeholder: "Enter Student DOB", onChange: (e) => handleChanges(e), name: "studentDOB", label: "Student DOB", defaultValue: studentData?.studentDOB }
+        { type: "date", placeholder: "Enter Student DOB", onChange: (e) => handleChanges(e), name: "studentDOB", label: "Student DOB", defaultValue: studentData?.studentDOB },
+        { type: "text", placeholder: "Enter Student RFID", onChange: (e) => handleChanges(e), name: "studentRFIDUniqueId", label: "Student RFID", defaultValue: studentData?.studentRFIDUniqueId }
     ]
 
     const createStudent = (e) => {

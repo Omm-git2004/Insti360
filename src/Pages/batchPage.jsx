@@ -15,6 +15,7 @@ import { useSideBarActiveContext } from "../Context_API/SideBarActivation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCompass } from "@fortawesome/free-solid-svg-icons";
 import PopWindow from "../Components/Others/PopWindow";
+import ShowAttendance from "../Components/ShowAttendance";
 
 const BatchPage = () => {
     const loc = useLocation()
@@ -116,6 +117,7 @@ const BatchPage = () => {
                         <button onClick={() => setCanRemoveBatch(true)} disabled={isloading || isRemoving}>Remove Batch</button>
                     </>
                 }
+                <button onClick={() => showPanelContent("attendance")} className={`panel-buttton ${showField === "attendance" && "active"}`} disabled={isloading || isRemoving}>Attendance</button>
                 <button onClick={() => navigate(-1)} disabled={isloading || isRemoving}>Go Back</button>
             </div>
 
@@ -126,6 +128,7 @@ const BatchPage = () => {
                 {showField === "assignments" && <ShowAssignments deptId={deptId} subjects={subjects} teacherName={null} type={"faculty"} isVisiting={true} />}
                 {showField === "exams" && admin && <ShowExams instituteId={instiData.instituteId} deptName={deptData.departmentName} deptId={deptId} subjects={subjects} />}
                 {showField === "announcement" && <Announcement deptId={deptId} announcements={batchData?.batchAnnouncements} batchName={batchData?.batchName} type={"Batch"} />}
+                {showField === "attendance" && <ShowAttendance batchName={batchData?.batchName} deptId={deptId} studentList={batchData?.studentList} />}
             </div>
         </section>
     )

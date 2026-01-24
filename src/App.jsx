@@ -49,10 +49,14 @@ import "./CSS/privacyPolicy.css"
 import "./CSS/termsAndConditions.css"
 import "./CSS/shippingAndDelivery.css"
 import "./CSS/cancellationRefunding.css"
+import "./CSS/batchAttendance.css"
+import "./CSS/punchIn.css"
 import TermsAndConditions from "./Pages/TermsAndCondition";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import CancellationRefundPolicy from "./Pages/CancellationRefundingPolicy";
 import ShippingAndDelivery from "./Pages/ShippingAndDelivery";
+import PunchIn from "./Pages/punchIn";
+import PunchOut from "./Pages/punchOut";
 
 
 // axios.defaults.baseURL = "http://localhost:8000/api/v1/"
@@ -96,7 +100,8 @@ const App = () => {
               </Route>
               <Route path="student/:studentId/attendExam/:examId" element={<AttendExam />} />
               <Route path="student/:studentId/resultPaper/:examId" element={<ResultPage />} />
-
+              <Route path="department/punchIn" element={<PunchIn/>}/>
+              <Route path="department/punchOut" element={<PunchOut/>}/>
             </Routes>
         }
         <ToastContainer />
