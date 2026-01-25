@@ -51,6 +51,7 @@ import "./CSS/shippingAndDelivery.css"
 import "./CSS/cancellationRefunding.css"
 import "./CSS/batchAttendance.css"
 import "./CSS/punchIn.css"
+import "./CSS/attendance.css"
 import TermsAndConditions from "./Pages/TermsAndCondition";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import CancellationRefundPolicy from "./Pages/CancellationRefundingPolicy";

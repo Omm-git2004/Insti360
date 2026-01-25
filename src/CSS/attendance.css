@@ -1,0 +1,90 @@
+.monthlyAttendancePage {
+  width: 100%;
+  min-height: 90vh;
+  padding: 20px;
+  background: #f9fafb;
+}
+
+.monthlyTitle {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.monthlyTableWrap {
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.monthlyTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px; /* helps scrolling on small screens */
+}
+
+.monthlyTable th,
+.monthlyTable td {
+  border: 1px solid #eee;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.monthlyTable th {
+  background: #111827;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.tickCell input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.submitMonthlyBtn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #16a34a;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.attendanceFilterBar{
+  display:flex;
+  gap:12px;
+  align-items:end;
+  margin-bottom:15px;
+}
+
+.attendanceFilterBar select{
+  padding:8px;
+  border-radius:6px;
+  border:1px solid #ccc;
+  outline:none;
+}
+
+.tickCell{
+  text-align:center;
+}
+
+.presentCell{
+  background:#dcfce7;  /* light green */
+}
+
+.absentCell{
+  background:#fee2e2;  /* light red */
+}
+
+.tickCell input:disabled{
+  cursor:not-allowed;
+  opacity:0.6;
+}

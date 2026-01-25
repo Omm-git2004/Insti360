@@ -10,6 +10,7 @@ import { useAuthenticateContext } from "../Context_API/Authentication";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCompass } from "@fortawesome/free-solid-svg-icons";
 import { useSideBarActiveContext } from "../Context_API/SideBarActivation";
+import TakeAttendance from "../Components/Faculty/TakeAttendance";
 
 const FacultyPage = () => {
 
@@ -48,6 +49,7 @@ const FacultyPage = () => {
                     <button onClick={() => navigate(`/institute/${instituteData.instituteId}/department/${departmentData.departmentName}`)} >Department Account</button>
                     <button onClick={() => showPanelContent("assignments")} className={`panel-buttton ${showField === "assignments" && "active"}`}>Assignments</button>
                     <button onClick={() => showPanelContent("exams")} className={`panel-buttton ${showField === "exams" && "active"}`} >Exams</button>
+                    <button onClick={() => showPanelContent("attendance")} className={`panel-buttton ${showField === "attendance" && "active"}`} >Attendance</button>
                     <button onClick={logout} >Logout</button>
                 </div>
                 <div className="main-content">
@@ -56,6 +58,7 @@ const FacultyPage = () => {
                     {showField === "account" && <ShowFaculty faculty={facultyData} />}
                     {showField === "assignments" && <ShowAssignments type={"faculty"} deptId={departmentData._id} subjects={facultyData.subjects} teacherName={facultyData.facultyName} />}
                     {showField === "exams" && <ShowExams instituteId={instituteData.instituteId} deptName={departmentData.departmentName} deptId={departmentData._id} subjects={facultyData.subjects} />}
+                    {showField === "attendance" && <TakeAttendance instituteId={instituteData.instituteId} deptName={departmentData.departmentName} deptId={departmentData._id} subjects={facultyData.subjects} />}
                 </div>
             </section>
             : <p>Loading Faculty Data...</p>

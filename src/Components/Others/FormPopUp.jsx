@@ -10,7 +10,7 @@ export default ({ children, onClose, onSubmit, formElems }) => {
             <div className="popup-content">
                 <form onSubmit={onSubmit}>
                     {
-                        formElems.map(({ label, onChange, name, type, placeholder, defaultValue, disabled }, index) => (
+                        formElems.length > 0 && formElems.map(({ label, onChange, name, type, placeholder, defaultValue, disabled }, index) => (
                             <div key={`${index}${name}`}>
                                 <label htmlFor={name}>{label}</label>
                                 <input type={type} name={name} id={name} defaultValue={defaultValue} placeholder={placeholder} onChange={onChange} disabled={disabled || isloading} />
