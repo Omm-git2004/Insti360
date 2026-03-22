@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useExamContext } from "../../Context_API/ExamContext";
 
 export default ({ duration }) => {
@@ -6,6 +6,7 @@ export default ({ duration }) => {
     const { handleSubmit } = useExamContext()
 
     const intervalRef = useRef(null)
+    const submittedRef = useRef(false)
 
     const minuteRef = useRef()
     const secondRef = useRef()
@@ -34,22 +35,26 @@ export default ({ duration }) => {
         }, 1000)
     }
 
-    const stopInterval = () => {
+
+    const stopInterval = (shouldSubmit = true) => {
         if (intervalRef.current) {
-            handleSubmit()
             clearInterval(intervalRef.current)
             intervalRef.current = null;
+
+            if (shouldSubmit && !submittedRef.current) {
+                submittedRef.current = true
+                handleSubmit()
+            }
         }
     }
 
     useEffect(() => {
         startInterval()
-    }, [])
+    }, []);
 
     useEffect(() => {
         return () => {
-            // Cleanup on component unmount i.e. if another component being opened
-            stopInterval();
+            stopInterval(false); // ❌ prevent API call on unmount
         };
     }, []);
 

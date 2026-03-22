@@ -42,7 +42,7 @@ export default ({ exams, date, currentTime }) => {
                                                                 { state: { exam, studentId: studentData.studentId } })
                                                         }
                                                     >Result</button>
-                                                    : date === exam.date && currentTime >= exam.encodedTime - 10 && currentTime < exam.encodedTime
+                                                    : date === exam.date && (currentTime >= exam.encodedTime - 10 && currentTime < exam.encodedTime)
                                                         ? <button onClick={() => navigate(`/student/${studentData.studentId}/attendExam/${exam._id}`, { state: exam })} style={{ backgroundColor: "green" }} >Attend</button>
                                                         : <button style={{ backgroundColor: "red" }} >Attend</button>
                                             }

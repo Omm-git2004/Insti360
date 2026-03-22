@@ -35,6 +35,7 @@ export const ExamProvider = ({ children, exam, studentData }) => {
         });
 
         mark *= (exam.fullMark / answerRef.current.length);
+        console.log(studentData);
 
         axios.post(`student/attendExam/${exam._id}`, { studentId: studentData.studentId, mark, answers: answerRef.current })
             .then(res => {
